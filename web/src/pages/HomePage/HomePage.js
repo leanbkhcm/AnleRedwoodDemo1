@@ -4,14 +4,14 @@ import Footer from '../Common/Footer'
 import { containerClassName } from '../../components/Charts/Constants'
 import DashboardsCell from '../../components/DashboardsCell/DashboardsCell'
 import { Link, routes } from '@redwoodjs/router'
-import { GAPageView } from '../../PageView'
+//import { GAPageView } from '../../PageView'
 import { useEffect } from 'react'
 import { setPageTitle } from '../../PageHelper'
 
 const HomePage = () => {
   useEffect(() => {
     setPageTitle()
-    GAPageView()
+    //GAPageView()
   }, [])
   return (
     <>
