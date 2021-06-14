@@ -1,5 +1,5 @@
 import { Link, routes } from '@redwoodjs/router'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useParams } from '@redwoodjs/router'
 import { useAuth } from '@redwoodjs/auth'
 
@@ -45,15 +45,15 @@ const Header = (props: HeaderProps) => {
 
             <div className="text-sm inline-block">
               <a href="https://docs.vida.io" target="_blank" className="inline-block text-teal-200 hover:text-white mr-4">
-                <FontAwesomeIcon icon="book" />
+                
                 <span className="ml-2">Docs</span>
               </a>
               <a href="https://blog.vida.io" target="_blank" className="inline-block text-teal-200 hover:text-white mr-4">
-                <FontAwesomeIcon icon="pen-nib" />
+               
                 <span className="ml-2">Blog</span>
               </a>
               <a href="https://github.com/vidalab/vida" target="_blank" className="inline-block text-teal-200 hover:text-white mr-4">
-                <FontAwesomeIcon icon={["fab", "github"]} />
+              
                 <span className="ml-2">Code</span>
               </a>
 
@@ -62,7 +62,7 @@ const Header = (props: HeaderProps) => {
                   to={"/dashboards/create/" + dashboardId()}
                   className="inline-block text-teal-200 hover:text-white mr-4"
                 >
-                  <FontAwesomeIcon icon={["fas", "clone"]} />
+                 
                   <span className="ml-2">Copy</span>
                 </Link>
               }
